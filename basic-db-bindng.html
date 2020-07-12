@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hello Vue</title>
+  </head>
+  <body>
+    <div id="root">
+      <input type="text" id="input" v-model="message" />
+
+      <p>The value of the input binded by vue is: {{ message }}</p>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+    <script>
+      let data = {
+        message: "Hello Vue",
+      };
+
+      new Vue({
+        el: "#root",
+        data: data,
+      });
+    </script>
+  </body>
+</html>
